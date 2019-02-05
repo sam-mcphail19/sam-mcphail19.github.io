@@ -1,1 +1,1 @@
-# Sam McPhail's personal website
+# Sam McPhail's Personal Website
