@@ -14,6 +14,15 @@ h1 {
   font-size: 42px;
 }
 
+h2 {
+  font-size: 34px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
 #background {
   position: fixed;
   top: 0;
@@ -44,7 +53,6 @@ h1 {
 
 #nav ul {
   display: inline;
-
 }
 
 #nav li {
@@ -84,6 +92,7 @@ h1 {
 
 #projects {
   padding-top: 20px;
+  margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
   background-color: rgba(0,0,0,0.7);
@@ -97,8 +106,11 @@ h1 {
   padding-bottom: 20px;
 }
 
+#projects h3 {
+  font-size: 24px;
+}
+
 #projects img {
-  width: 20%;
   display:inline-block;
   text-align: center;
 }
@@ -122,11 +134,23 @@ h1 {
 }
 
 #projects .github {
-  transform: scale(0.15,0.15);
-  position: relative;
-  float: left;
+
 }
 
 footer {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0);
+  color: white;
+  height: 100%;
+  padding-left: 40px;
+}
+
+footer h2 {
+  padding-left: 80%;
+  margin-bottom: 0;
+}
+
+footer .contacthalf {
+  display: inline-block;
+  padding-top: 0;
+  padding-left: 10%;
 }
