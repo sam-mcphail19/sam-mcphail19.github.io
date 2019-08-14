@@ -1,22 +1,45 @@
 body {
   font-family: "Titillium Web", sans-serif;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 50%;
 }
 
 .navbar-header > a {
-  font-size:28px;
+  font-size: 28px;
+  background-image: linear-gradient(black, black);
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all .3s ease-out;
 }
 
 .navbar-header > a:hover {
   text-decoration: none;
-  text-shadow: 1px 1px 1px #bbbbbb;
+  background-size: 100% 2px;
+}
+
+.navbar {
+  float: right;
+  width: 100%;
 }
 
 .nav > li {
-  font-size:20px;
-  padding: 20px 30px 20px 30px;
+  font-size: 20px;
+  padding: 1% 5%;
+  display:inline-block;
+}
+
+.nav > li > a {
+  background-image: linear-gradient(black, black);
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all .3s ease-out;
 }
 
 .nav > li > a:hover {
   text-decoration: none;
-  text-shadow: 1px 1px 1px #bbbbbb;
+  background-size: 100% 1px;
 }
