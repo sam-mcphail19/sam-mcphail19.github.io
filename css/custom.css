@@ -1,0 +1,22 @@
+body {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.navbar-header > a {
+  font-size:28px;
+}
+
+.navbar-header > a:hover {
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #bbbbbb;
+}
+
+.nav > li {
+  font-size:20px;
+  padding: 20px 30px 20px 30px;
+}
+
+.nav > li > a:hover {
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #bbbbbb;
+}
