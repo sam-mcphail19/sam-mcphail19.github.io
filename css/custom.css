@@ -43,3 +43,21 @@ body {
   text-decoration: none;
   background-size: 100% 1px;
 }
+
+.top-buffer{
+  margin-top: 15vh;
+}
+
+.img-max {
+  max-width: 100%;
+  height: auto;
+}
+
+.pLink {
+  display: inline-block;
+}
+
+#links {
+  background-color: #88aaff;
+  padding: 1% 0%;
+}
