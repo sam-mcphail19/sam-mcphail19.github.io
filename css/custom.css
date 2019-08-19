@@ -58,6 +58,8 @@ body {
 }
 
 #links {
-  background-color: #88aaff;
+  background-color: #77bbff;
+  border-bottom-left-radius:0.25rem;
+  border-bottom-right-radius:0.25rem;
   padding: 1% 0%;
 }
