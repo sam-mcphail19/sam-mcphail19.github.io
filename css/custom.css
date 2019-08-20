@@ -53,10 +53,6 @@ body {
   height: auto;
 }
 
-.pLink {
-  display: inline-block;
-}
-
 #links {
   background-color: #77bbff;
   border-bottom-left-radius:0.25rem;
