@@ -1,0 +1,9 @@
+﻿TODO:
+
+make background scroll up when scrolling
+
+make nav sticky
+
+add work experience, education, projects
+
+implement fade in animation for work experience, education, projects
