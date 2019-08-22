@@ -11,31 +11,28 @@ ctrl-alt-q to stop
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
     <link rel="stylesheet" text="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" text="text/css" href="css/custom.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="scripts.js"></script>
   </head>
   <body>
-    <div class="container-fluid">
-	  <div class="row">
-		<div class="col-sm-12">
-	      <nav class="navbar sticky-top">
-		    <div class="container-fluid">
-		      <div class="navbar-header">
-			    <a class="navbar-brand underline" href="#">Sam McPhail</a>
-		      </div>
-		      <ul class="nav navbar-right">
-			    <li><a href="#" class="underline">Experience</a></li>
-			    <li><a href="#" class="underline">Education</a></li>
-			    <li><a href="#" class="underline">Projects</a></li>
-			    <li><a href="#" class="underline">Skills</a></li>
-			    <li><a href="#" class="underline">Contact</a></li>
-		      </ul>
-		    </div>
-	      </nav>
+    <nav class="navbar fixed-top bg-white">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="navbar-brand underline" href="#">Sam McPhail</a>
 		</div>
+		<ul class="nav navbar-right">
+		  <li><a href="#" class="underline">Experience</a></li>
+	      <li><a href="#" class="underline">Education</a></li>
+		  <li><a href="#" class="underline">Projects</a></li>
+		  <li><a href="#" class="underline">Skills</a></li>
+		  <li><a href="#" class="underline">Contact</a></li>
+		</ul>
 	  </div>
-	  <div class="row top-buffer">
-	  </div>
+	</nav>
+    <main class="container-fluid">
+	  <div class="row top-buffer"></div>
 	  <div class="row p-2 justify-content-center">
-		<div class="flex-container bg-white shadow-lg justify-content-center rounded">
+		<div class="flex-container bg-white shadow-lg justify-content-center rounded fade">
 		  <div class="row ml-auto mr-auto">
 			<div class="col">
 			  <img src="img/headshot.jpg" class="img-fluid mt-2">
@@ -74,9 +71,10 @@ ctrl-alt-q to stop
 		  </div>
 		</div>
 	  </div>
+	  <div class="row top-buffer"></div>
 	  <div class="row buffer text-center">
 		<div class="col">
-		  <h3 class="fade-in">Work Experience</h3>
+		  <h3 class="fade">Work Experience</h3>
 		  <ul class="list-unstyled">
 		    <li>1</li>
 			<li>2</li>
@@ -86,6 +84,18 @@ ctrl-alt-q to stop
 		  </ul>
 		</div>
 	  </div>
-	</div>
+	  <div class="row buffer text-center">
+		<div class="col">
+		  <h3 class="fade">Work Experience</h3>
+		  <ul class="list-unstyled">
+		    <li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		  </ul>
+		</div>
+	  </div>
+	</main>
   </body>
 </html>

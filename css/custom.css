@@ -21,6 +21,11 @@ body {
   display:inline-block;
 }
 
+.fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
 .underline {
   background-image: linear-gradient(black, black);
   background-size: 0 1px;
