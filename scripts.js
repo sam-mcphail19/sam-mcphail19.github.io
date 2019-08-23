@@ -2,7 +2,7 @@ $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
 	var windowTop = $(this).scrollTop();
-    $(".fade").each(function() {
+    $(".fade2").each(function() {
       /* Check the location of each desired element */
       var objectBottom = $(this).offset().top + $(this).outerHeight();
 	  var objectTop = $(this).offset().top;
@@ -18,6 +18,16 @@ $(window).on("load",function() {
       } else { //object comes into view (scrolling down)
         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
 	  }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    $(".fade").each(function(){
+	  var st = $(window).scrollTop();
+	  var height = $(window).height();
+	  $(this).css("opacity", (height-st) / height);
     });
   }).scroll(); //invoke scroll-handler on page-load
 });
