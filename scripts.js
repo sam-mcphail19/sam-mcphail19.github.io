@@ -1,33 +1,11 @@
 $(window).on("load",function() {
   $(window).scroll(function() {
-    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-	var windowTop = $(this).scrollTop();
-    $(".fade2").each(function() {
-      /* Check the location of each desired element */
-      var objectBottom = $(this).offset().top + $(this).outerHeight();
-	  var objectTop = $(this).offset().top;
-      
-      /* If the element is completely within bounds of the window, fade it in */
-      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
-      } else { //object goes out of view (scrolling up)
-        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-      }
-	  if(objectTop < windowTop){ //object goes out of view (scrolling up)
-	    if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-      } else { //object comes into view (scrolling down)
-        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
-	  }
-    });
-  }).scroll(); //invoke scroll-handler on page-load
-});
-
-$(window).on("load",function() {
-  $(window).scroll(function() {
-    $(".fade").each(function(){
-	  var st = $(window).scrollTop();
-	  var height = $(window).height();
-	  $(this).css("opacity", (height-st) / height);
+    $(".scroll-fade").each(function(){
+      var y = $(this).offset().top - $(window).scrollTop() - $("#nav").height() - $(window).height()/15;
+      var yWithOffset = (y - $(window).height()/5) / ($(window).height() - $(window).height()/3);
+      var opacity = -(yWithOffset*yWithOffset) + 1;
+  	  $(this).css("opacity", opacity);
+      console.log($(this).get(0).tagName + " " + y + " " + opacity);
     });
   }).scroll(); //invoke scroll-handler on page-load
 });
