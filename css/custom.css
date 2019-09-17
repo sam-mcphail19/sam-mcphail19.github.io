@@ -9,6 +9,7 @@ body {
 .navbar {
   float: right;
   width: 100%;
+  background-color: rbga(255,255,255,0);
 }
 
 .navbar-header > a {
@@ -23,8 +24,7 @@ body {
 
 .nav > button {
   font-size: 20px;
-  float: right;
-  background-color: #fff;
+  background-color: transparent;
   border: none;
   padding: 1% 5%;
 }
