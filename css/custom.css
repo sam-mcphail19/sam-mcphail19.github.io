@@ -15,15 +15,31 @@ body {
   width: 100%;
 }
 
-.nav > li {
-  font-size: 20px;
-  padding: 1% 5%;
-  display:inline-block;
+.nav {
+  float: right;
 }
 
-.fixed-top.scrolled {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
+.nav > button {
+  font-size: 20px;
+  float: right;
+  background-color: #fff;
+  border: none;
+  align-self: right;
+}
+
+.nav > button > h5 {
+  font-size: 20px;
+  color: #007bff;
+  padding: 5% 20%;
+}
+
+.nav > button > h5:hover {
+  color: #0056b3;
+  cursor: pointer;
+}
+
+.nav > button:focus {
+  outline: none;
 }
 
 .underline {
@@ -36,7 +52,7 @@ body {
 
 .underline:hover {
   text-decoration: none;
-  background-size: 100% 1px;
+  background-size: 70% 1px;
 }
 
 .top-buffer{
