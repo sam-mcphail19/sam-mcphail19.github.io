@@ -6,17 +6,19 @@ body {
   background-size: 100% 50%;
 }
 
-.navbar-header > a {
-  font-size: 28px;
-}
-
 .navbar {
   float: right;
   width: 100%;
 }
 
+.navbar-header > a {
+  font-size: 28px;
+  width: 30%;
+}
+
 .nav {
-  float: right;
+  display: inline-block;
+  width: 70%;
 }
 
 .nav > button {
@@ -24,13 +26,13 @@ body {
   float: right;
   background-color: #fff;
   border: none;
-  align-self: right;
+  padding: 1% 5%;
 }
 
 .nav > button > h5 {
   font-size: 20px;
   color: #007bff;
-  padding: 5% 20%;
+  align-self: center;
 }
 
 .nav > button > h5:hover {
@@ -52,7 +54,7 @@ body {
 
 .underline:hover {
   text-decoration: none;
-  background-size: 70% 1px;
+  background-size: 100% 1px;
 }
 
 .top-buffer{
