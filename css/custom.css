@@ -1,9 +1,23 @@
 body {
   font-family: "Titillium Web", sans-serif;
-  background-image: url("../img/background.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 50%;
+}
+
+#background {
+  vertical-align: top;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#background > img {
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 50%;
+  min-height: 50%;
+  overflow: auto;
+  transform: scale(1, 1);
 }
 
 .navbar {
