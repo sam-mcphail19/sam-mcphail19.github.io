@@ -23,7 +23,7 @@ body {
 .navbar {
   float: right;
   width: 100%;
-  background-color: rbga(255,255,255,0);
+  background-color: #fff;
 }
 
 .navbar-header > a {
@@ -34,27 +34,39 @@ body {
 .nav {
   display: inline-block;
   width: 70%;
+  float: right;
 }
 
-.nav > button {
+button {
   font-size: 20px;
   background-color: transparent;
   border: none;
   padding: 1% 5%;
 }
 
-.nav > button > h5 {
+button > h5 {
   font-size: 20px;
   color: #007bff;
   align-self: center;
 }
 
-.nav > button > h5:hover {
+button > h3 {
+  color: #007bff;
+  align-self: center;
+  white-space: nowrap;
+}
+
+button > h5:hover {
   color: #0056b3;
   cursor: pointer;
 }
 
-.nav > button:focus {
+button > h3:hover {
+  color: #0056b3;
+  cursor: pointer;
+}
+
+button:focus {
   outline: none;
 }
 
@@ -72,7 +84,7 @@ body {
 }
 
 .top-buffer{
-  margin-top: 15vh;
+  margin-top: 20vh;
 }
 
 .img-max {
@@ -91,10 +103,23 @@ body {
   text-decoration: none;
 }
 
-.text-black {
+.buffer {
+  margin-top: 45vh;
+}
+
+.shadow {
+  transition-property: all;
+  transition-duration: 0.5s;
+  box-shadow: 0 5vw 5vh rgba(0, 0, 0, 0.175);
+}
+
+.media-link a{
+  font-size: 0.8em;
   color: #000;
 }
 
-.buffer {
-  margin-top: 45vh;
+.media-link a:hover {
+  transition-property: all;
+  transition-duration: 0.5s;
+  text-shadow: 0em 0em 0.25em #fff;
 }

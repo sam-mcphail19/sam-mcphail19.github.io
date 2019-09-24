@@ -1,7 +1,5 @@
 ﻿TODO:
 
-make background scroll up when scrolling
-
 add work experience, education, projects
 
-figure out if navbar issue is only with live server or if caused by something else
+add scroll-to animation when navbar links are clicked on
