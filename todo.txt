@@ -1,5 +1,7 @@
 ﻿TODO:
 
-add work experience, education, projects
-
 add scroll-to animation when navbar links are clicked on
+
+add footer
+
+maybe change color of info sections? or box-shadows or something
