@@ -25,14 +25,6 @@ $(window).on("load",function() {
   }).scroll(); //invoke scroll-handler on page-load
 });
 
-$(document).ready(function (){
-    $("#link").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#div1").offset().top
-        }, 2000);
-    });
-});
-
 (function($) {
   /**
    * Copyright 2012, Digital Fusion
@@ -69,3 +61,15 @@ $(window).scroll(function(event) {
     }
   });
 });
+
+function scrollToElement(element){
+  $('html, body').animate({
+        scrollTop: $(element).offset().top - $("#nav").height()*2
+    }, 600);
+}
+
+function scrollToTop(){
+  $('html, body').animate({
+        scrollTop: 0
+    }, 600);
+}

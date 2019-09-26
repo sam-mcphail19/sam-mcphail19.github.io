@@ -19,14 +19,14 @@ ctrl-alt-q to stop
     <nav class="navbar fixed-top" id="nav">
   	  <div class="container-fluid">
     		<div class="navbar-header">
-          <button type="button"><h3 class="underline">Sam McPhail</h3></button>
+          <button type="button" onclick="scrollToTop()"><h3 class="underline">Sam McPhail</h3></button>
     		</div>
         <div class="nav" align="right">
-          <button type="button"><h5 class="underline">Education</h5></button>
-          <button type="button"><h5 class="underline">Experience</h5></button>
-          <button type="button"><h5 class="underline">Extracurriculars</h5></button>
-          <button type="button"><h5 class="underline">Projects</h5></button>
-          <button type="button"><h5 class="underline">Contact</h5></button>
+          <button type="button" onclick="scrollToElement('#education')"><h5 class="underline">Education</h5></button>
+          <button type="button"><h5 class="underline"onclick="scrollToElement('#experience')">Experience</h5></button>
+          <button type="button"><h5 class="underline"onclick="scrollToElement('#extrcurriculars')">Extracurriculars</h5></button>
+          <button type="button"><h5 class="underline"onclick="scrollToElement('#projects')">Projects</h5></button>
+          <button type="button"><h5 class="underline"onclick="scrollToElement('#contact')">Contact</h5></button>
         </div>
   	  </div>
 	  </nav>
@@ -155,9 +155,10 @@ ctrl-alt-q to stop
                 <h5 class="text-center pb-3 bold">Software Developer - Queen's Technology & Media Association</h5>
                 <h5 style="float: right">(2019-2020)</h5>
                 <ul class="inner-list">
-                  <li class="slide-in-right">4.1 GPA (4.3 Scale)</li>
-                  <li class="slide-in-right">Queen’s Excellence Scholarship – an entrance scholarship provided to students with excellent high school performance</li>
-                  <li class="slide-in-right">Dean’s Honour List in 2017-2018 and 2018-2019</li>
+                  <li class="slide-in-right">Underwent QTMA’s summer program, receiving education on topics including version control software such as GitHub, API’s, databases, and web architecture</li>
+                  <li class="slide-in-right">Developed a blogging web application using Python and Flask as a portion of the summer program</li>
+                  <li class="slide-in-right">Collaborated with a team of two other developers, a UI/UX designer and a project manager to design a mobile application</li>
+                  <li class="slide-in-right">Had bi-weekly meetings with the team to ensure the quality and feasibility of the application</li>
                 </ul>
               </li>
         			<li class="buffer-small">
@@ -228,7 +229,7 @@ ctrl-alt-q to stop
     		</div>
   	  </div>
 	  </main>
-    <div class="footer">
+    <div class="footer" id="contact">
       <div class="footer-box">
         <h5>Links</h5>
         <div class="img-link-div pb-2">

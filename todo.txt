@@ -1,3 +1,3 @@
 ﻿TODO:
 
-add scroll-to animation when navbar links are clicked on
+Fix jerky slide-entrance animation
